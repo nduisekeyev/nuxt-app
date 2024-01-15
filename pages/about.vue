@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
-
-const about = "about";
+const about = "About";
 
 onMounted(() => {
   console.log("about");
@@ -9,6 +7,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>{{ about }}</h1>
-  <div>Main about</div>
+  <div class="container">
+    <h1>{{ about }}</h1>
+  </div>
 </template>

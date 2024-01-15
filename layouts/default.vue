@@ -5,6 +5,7 @@ console.log("default_vue");
 <template>
   <div>
     <LayoutHeader />
-    <Counter />
+
+    <slot />
   </div>
 </template>

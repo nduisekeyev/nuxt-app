@@ -1,7 +1,9 @@
+<script scope lang="ts">
+console.log("index");
+</script>
+
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <Counter />
 </template>
 
 <style></style>

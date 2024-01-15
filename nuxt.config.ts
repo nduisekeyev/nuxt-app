@@ -41,9 +41,6 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    "/": {
-      isr: 60 * 60 * 24,
-    },
     "/blog": {
       ssr: false,
     },
@@ -52,9 +49,6 @@ export default defineNuxtConfig({
     },
     "/insights": {
       ssr: false,
-    },
-    "/**": {
-      isr: 60 * 60 * 24,
     },
   },
 });
