@@ -1,10 +1,10 @@
-<script>
+<script setup lang="ts">
 useHead({
-  title: "Shopware Demo store",
-  meta: [{ name: "description", content: "Shopware Demo store" }],
-  htmlAttrs: {
-    lang: "en",
-  },
+  title: "My Nuxt App",
+  meta: [{ name: "description", content: "Counter app" }],
+  // htmlAttrs: {
+  //   lang: "en",
+  // },
 });
 </script>
 
