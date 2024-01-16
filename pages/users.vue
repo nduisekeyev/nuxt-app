@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref, watchEffect } from "vue";
+// import Button from "./Button.vue";
 
 interface Users {
   id: number;
@@ -38,6 +39,10 @@ const fetchUsers = async () => {
   }
 };
 
+const changeLetter = (title: string) => {
+  console.log("Change letter:", title);
+};
+
 onMounted(() => {
   fetchUsers();
 });
@@ -64,5 +69,7 @@ watch(searchTerm, () => {
     <div v-for="user in users" :key="user.id">
       {{ user.name }}
     </div>
+
+    <Button :writeLetter="changeLetter" />
   </div>
 </template>
