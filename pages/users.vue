@@ -38,7 +38,9 @@ const fetchUsers = async () => {
   }
 };
 
-onMounted(fetchUsers);
+onMounted(() => {
+  fetchUsers();
+});
 
 // Watch for changes in the searchTerm and filter users accordingly
 watchEffect(() => {
