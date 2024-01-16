@@ -1,10 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: "My Nuxt App",
+  title: "Nuxt App",
   meta: [{ name: "description", content: "Counter app" }],
-  // htmlAttrs: {
-  //   lang: "en",
-  // },
+  htmlAttrs: {
+    lang: "en",
+  },
 });
 </script>
 
