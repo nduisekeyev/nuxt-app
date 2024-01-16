@@ -20,8 +20,39 @@ const generateRandomType = () => {
 
 let type = generateRandomType();
 
-const todos = ref<Todo[]>([]);
 const inputText = ref<string>("");
+const count = ref<number>(1);
+
+const plusOne = computed(() => count.value + 1);
+console.log("plusOne", plusOne.value); // 2
+// plusOne.value++ // error
+
+const plusOneB = computed({
+  get: () => count.value + 1,
+  set: (val) => {
+    count.value = val - 1;
+  },
+});
+
+plusOneB.value = 1; // value set via computed
+console.log("plusOneB", count.value); // 0
+
+const obj = reactive({ count });
+
+// ref will be unwrapped
+console.log("check equal", obj.count === count.value); // true
+
+const original = reactive({ count: 20 });
+const copy = readonly(original);
+
+watchEffect(() => {
+  // works for reactivity tracking
+  original.count++;
+  console.log("original_count", original);
+  console.log("copy_count", copy.count);
+});
+
+const todos = ref<Todo[]>([]);
 
 const fetchTodos = async () => {
   try {
@@ -42,6 +73,8 @@ onMounted(fetchTodos);
   <div class="container">
     <div class="content">
       <h1>{{ name }}</h1>
+
+      <div>PLUS ONE: {{ plusOneB }}</div>
 
       <span v-text="msg" />
       <!-- v-if -->
