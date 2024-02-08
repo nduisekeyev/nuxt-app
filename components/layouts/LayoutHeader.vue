@@ -3,6 +3,7 @@
     <header class="header" aria-label="top-navigation">
       <nav>
         <ul>
+          <li><NuxtLink to="/">Nuxt</NuxtLink></li>
           <li><NuxtLink to="/industry">Industry</NuxtLink></li>
           <li><NuxtLink to="/blog">Blog</NuxtLink></li>
           <li><NuxtLink to="/users">Users</NuxtLink></li>

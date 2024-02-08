@@ -2,7 +2,7 @@
 export default {
   // a group of options api
   data() {
-    const name = "Vue.js App";
+    const name = "Nuxt.js App";
 
     return {
       name,
