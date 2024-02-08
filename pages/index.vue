@@ -5,5 +5,3 @@ console.log("index");
 <template>
   <Counter />
 </template>
-
-<style></style>

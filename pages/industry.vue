@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const insights = "insights";
+const name = "Industry";
 </script>
 
 <template>
   <div class="container">
-    <h1>{{ insights }}</h1>
+    <h1 class="heading margin-a">{{ name }}</h1>
   </div>
 </template>

@@ -2,8 +2,7 @@
 export default {
   // a group of options api
   data() {
-    const name = "Vue.js App";
-    console.log("_name", name);
+    const name = "Nuxt.js App";
 
     return {
       name,
@@ -34,15 +33,13 @@ export default {
 
 <template>
   <main class="container">
-    <div class="content">
-      <h1 class="text">{{ name }}</h1>
-      <h2>{{ mount }}</h2>
-      <div class="methods">
-        <button @click="handleClick">Click me</button>
-        <button @click="resetClick" class="reset">Reset</button>
-      </div>
-
-      <div class="counter">Counter: {{ counter }}</div>
+    <h1 class="heading margin-a">{{ name }}</h1>
+    <h2>{{ mount }}</h2>
+    <div class="methods">
+      <button @click="handleClick">Click me</button>
+      <button @click="resetClick" class="reset">Reset</button>
     </div>
+
+    <div class="margin-a">Counter: {{ counter }}</div>
   </main>
 </template>
