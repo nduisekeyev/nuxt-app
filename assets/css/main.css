@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 body {
-  font-family: "Poppins", sans-serif; /* Use the imported font */
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -9,18 +9,26 @@ body {
   margin: auto;
 }
 
-.content {
-  padding-top: 7rem;
+.margin-a {
+  margin: 2rem 0;
+}
+
+.heading {
+  font-size: 2.5rem;
+}
+
+.heading-2 {
+  font-size: 2rem;
 }
 
 .text {
-  color: #ff0000; /* Use a shade of red for text color */
-  font-size: 2em; /* Set the font size to make it visually appealing */
+  color: #ff0000;
+  font-size: 2em;
 }
 
 button {
-  background-color: #007bff; /* Use a shade of blue for button background */
-  color: #fff; /* Set the text color of the button to white */
+  background-color: #007bff;
+  color: #fff;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -30,11 +38,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Change button background on hover */
-}
-
-.counter {
-  margin-top: 2rem;
+  background-color: #0056b3;
 }
 
 .reset {

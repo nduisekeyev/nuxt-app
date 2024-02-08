@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const about = "About";
+const name = "About";
 
 onMounted(() => {
   console.log("about");
@@ -8,6 +8,6 @@ onMounted(() => {
 
 <template>
   <div class="container">
-    <h1>{{ about }}</h1>
+    <h1 class="heading margin-a">{{ name }}</h1>
   </div>
 </template>

@@ -62,7 +62,7 @@ watch(searchTerm, () => {
 
 <template>
   <div class="container">
-    <h1>{{ name }}</h1>
+    <h1 class="heading margin-a">{{ name }}</h1>
 
     <input v-model="searchTerm" placeholder="Search users by name" />
 

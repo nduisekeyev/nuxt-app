@@ -8,7 +8,7 @@ interface Todo {
   completed: boolean;
 }
 
-const name = "BlogPage";
+const name = "Blog Page";
 const msg = "Some message blog here...";
 const loading = true;
 
@@ -71,34 +71,30 @@ onMounted(fetchTodos);
 
 <template>
   <div class="container">
-    <div class="content">
-      <h1>{{ name }}</h1>
+    <h1 class="heading margin-a">{{ name }}</h1>
 
-      <div>PLUS ONE: {{ plusOneB }}</div>
+    <div>PLUS ONE: {{ plusOneB }}</div>
 
-      <span v-text="msg" />
-      <!-- v-if -->
-      <div v-if="loading">Loading...</div>
+    <span v-text="msg" />
+    <!-- v-if -->
+    <div v-if="loading">Loading...</div>
 
-      <!-- v-else-if -->
-      <div v-if="type === 'A'">A</div>
-      <div v-else-if="type === 'B'">B</div>
-      <div v-else-if="type === 'C'">C</div>
-      <div v-else>Not A/B/C</div>
+    <!-- v-else-if -->
+    <div v-if="type === 'A'">A</div>
+    <div v-else-if="type === 'B'">B</div>
+    <div v-else-if="type === 'C'">C</div>
+    <div v-else>Not A/B/C</div>
 
-      <!-- v-model -->
-      <input v-model="inputText" placeholder="Edit me" />
-      <p>Input text: {{ inputText }}</p>
-      <!-- v-for -->
-      <h2>My Todo List:</h2>
+    <!-- v-model -->
+    <input v-model="inputText" placeholder="Edit me" />
+    <p>Input text: {{ inputText }}</p>
 
-      <div v-for="todo in todos" :key="todo.id">
-        <ul>
-          <li>{{ todo.title }}</li>
-        </ul>
-      </div>
+    <h2 class="heading-2 margin-a">My Todo List:</h2>
+    <!-- v-for -->
+    <div v-for="todo in todos" :key="todo.id">
+      <ul>
+        <li>{{ todo.title }}</li>
+      </ul>
     </div>
   </div>
 </template>
-
-<style></style>

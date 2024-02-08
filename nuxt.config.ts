@@ -41,13 +41,13 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
+    "/industry": {
+      ssr: false,
+    },
     "/blog": {
       ssr: false,
     },
     "/about": {
-      ssr: false,
-    },
-    "/insights": {
       ssr: false,
     },
   },
